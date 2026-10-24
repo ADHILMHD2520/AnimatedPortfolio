@@ -1,0 +1,31 @@
+ADHIL MUHAMMAD K.
+Software Developer / MERN Stack Developer
+Kerala, India
+
+PROFILE
+Computer Science and Engineering graduate focused on modern web applications,
+interactive interfaces, and dependable full-stack development.
+
+SKILLS
+HTML5, CSS3, JavaScript, React.js, Node.js, Express.js, MongoDB, Python,
+Django, PostgreSQL, SQL, Git & GitHub, Docker, REST APIs, AWS, Playwright,
+Selenium.
+
+PROJECTS
+Fragranzia — MERN e-commerce application with authentication, product
+management, cart, wishlist, orders, Razorpay payments, and an admin dashboard.
+
+Food Delivery Application — MERN food delivery platform with authentication,
+food categories, cart, orders, payments, and admin management.
+
+LMS Platform — Full-stack learning management system with student
+authentication, instructor tools, courses, lessons, video learning, progress
+tracking, and admin dashboard.
+
+EXPERIENCE
+Software Developer, Production & Maintenance Division
+Development work, data migration, backend and database development, testing,
+API development, and maintenance.
+
+EDUCATION
+B.Tech, Computer Science and Engineering

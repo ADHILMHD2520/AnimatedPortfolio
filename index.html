@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b19" />
+    <meta name="description" content="Portfolio of Adhil Muhammad, a software developer specializing in MERN stack and modern web applications." />
+    <meta property="og:title" content="Adhil Muhammad — Software Developer" />
+    <meta property="og:description" content="Enter an interactive developer world built by Adhil Muhammad." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300e5ff'/%3E%3Cpath d='M18 21 7 32l11 11M46 21l11 11-11 11M37 13 27 51' fill='none' stroke='%23070b19' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <title>Adhil Muhammad — Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <div class="loader" id="loader" role="status" aria-live="polite">
+      <div class="loader-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="eyebrow">SYSTEM / 01</p>
+      <h1>ADHIL<br />MUHAMMAD</h1>
+      <div class="loading-copy"><span id="loading-message">Initializing developer world...</span><span id="loading-number">00%</span></div>
+      <div class="loading-track"><span id="loading-progress"></span></div>
+    </div>
+
+    <main id="app" class="app app--locked">
+      <section class="world-shell" aria-label="Adhil's interactive developer world">
+        <div class="aurora aurora-one" aria-hidden="true"></div>
+        <div class="aurora aurora-two" aria-hidden="true"></div>
+        <div class="star-field" aria-hidden="true"></div>
+
+        <header class="topbar">
+          <a class="brand" href="#home" aria-label="Return to Developer World">
+            <span class="brand-mark">A<span>/</span>M</span>
+            <span class="brand-copy">ADHIL'S<br /><b>DEVELOPER WORLD</b></span>
+          </a>
+          <div class="top-actions">
+            <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false"><span>◌</span> SOUND <b>OFF</b></button>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><em>MENU</em></button>
+          </div>
+        </header>
+
+        <nav class="site-nav" id="site-nav" aria-label="Portfolio sections">
+          <button data-go="about">01 / ABOUT</button>
+          <button data-go="projects">02 / PROJECTS</button>
+          <button data-go="skills">03 / SKILLS</button>
+          <button data-go="experience">04 / EXPERIENCE</button>
+          <button data-go="resume">05 / RESUME</button>
+          <button data-go="contact">06 / CONTACT</button>
+        </nav>
+
+        <div class="world-meta">
+          <div class="world-title"><span class="live-dot"></span> LIVE EXPLORATION <small>• KERALA, INDIA</small></div>
+          <div class="map-readout"><span>SECTOR</span><b id="sector-readout">CENTRAL HUB</b></div>
+        </div>
+
+        <div class="world" id="world" tabindex="0" aria-label="Interactive map. Move with WASD or arrow keys, or select a destination with the navigation menu.">
+          <div class="world-floor" aria-hidden="true"></div>
+          <div class="route route-a" aria-hidden="true"></div>
+          <div class="route route-b" aria-hidden="true"></div>
+          <div class="route route-c" aria-hidden="true"></div>
+          <div class="island island-one" aria-hidden="true"></div>
+          <div class="island island-two" aria-hidden="true"></div>
+
+          <button class="landmark landmark--about" data-section="about" style="--x:23; --y:26" aria-label="Open About Me">
+            <span class="building house"><i></i><i></i><i></i></span>
+            <span class="landmark-label"><small>01</small> ABOUT ME</span>
+          </button>
+          <button class="landmark landmark--projects" data-section="projects" style="--x:25; --y:60" aria-label="Open Projects Lab">
+            <span class="building lab"><i></i><i></i><i></i><i></i></span>
+            <span class="signal"><b></b><b></b><b></b></span>
+            <span class="landmark-label"><small>02</small> PROJECTS LAB</span>
+          </button>
+          <button class="landmark landmark--skills" data-section="skills" style="--x:73; --y:30" aria-label="Open Skill Station">
+            <span class="building reactor"><i></i><i></i><i></i></span>
+            <span class="landmark-label"><small>03</small> SKILL STATION</span>
+          </button>
+          <button class="landmark landmark--experience" data-section="experience" style="--x:77; --y:57" aria-label="Open Experience Tower">
+            <span class="building tower"><i></i><i></i><i></i></span>
+            <span class="landmark-label"><small>04</small> EXPERIENCE</span>
+          </button>
+          <button class="landmark landmark--resume" data-section="resume" style="--x:53; --y:22" aria-label="Open Resume Terminal">
+            <span class="building terminal"><i></i><i></i><i></i></span>
+            <span class="landmark-label"><small>05</small> RESUME NODE</span>
+          </button>
+          <button class="landmark landmark--contact" data-section="contact" style="--x:51; --y:78" aria-label="Open Contact Station">
+            <span class="building station"><i></i><i></i><i></i></span>
+            <span class="landmark-label"><small>06</small> CONTACT STATION</span>
+          </button>
+
+          <div class="beacon beacon-one" style="--x:42; --y:45" aria-hidden="true"></div>
+          <div class="beacon beacon-two" style="--x:62; --y:65" aria-hidden="true"></div>
+          <div class="beacon beacon-three" style="--x:11; --y:44" aria-hidden="true"></div>
+
+          <div class="player" id="player" aria-label="Explorer vehicle" role="img">
+            <span class="player-glow"></span><span class="player-body"><i></i><i></i></span><span class="player-name">YOU</span>
+          </div>
+          <div class="proximity" id="proximity" aria-live="polite"><span>NEARBY /</span><b id="proximity-name">CENTRAL HUB</b><kbd>ENTER</kbd></div>
+        </div>
+
+        <section class="intro-card" id="intro-card" aria-labelledby="welcome-title">
+          <p class="eyebrow">WELCOME TO</p>
+          <h2 id="welcome-title">ADHIL'S<br /><span>WORLD.</span></h2>
+          <p>Move through a small universe of code, ideas, and shipped experiences.</p>
+          <div class="control-guide"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><small>MOVE</small></span><span><kbd>↖</kbd><kbd>↗</kbd><small>EXPLORE</small></span></div>
+          <button class="primary-button" id="explore-button" type="button">EXPLORE PORTFOLIO <span>↗</span></button>
+        </section>
+
+        <div class="quick-actions">
+          <button data-go="projects" type="button"><i>◈</i> VIEW PROJECTS</button>
+          <button data-go="resume" type="button"><i>↓</i> RESUME</button>
+        </div>
+
+        <div class="mobile-controls" aria-label="Touch movement controls">
+          <button type="button" data-move="up" aria-label="Move up">↑</button>
+          <button type="button" data-move="left" aria-label="Move left">←</button>
+          <button type="button" data-move="down" aria-label="Move down">↓</button>
+          <button type="button" data-move="right" aria-label="Move right">→</button>
+        </div>
+        <p class="mobile-hint">DRAG THE WORLD TO EXPLORE</p>
+      </section>
+    </main>
+
+    <div class="panel-backdrop" id="panel-backdrop" hidden></div>
+    <aside class="detail-panel" id="detail-panel" aria-labelledby="panel-title" aria-modal="true" role="dialog" hidden tabindex="-1">
+      <div class="panel-chrome"><span></span><span></span><span></span><b>ADHIL_WORLD.EXE</b></div>
+      <button class="panel-close" id="panel-close" type="button" aria-label="Close panel">×</button>
+      <div class="panel-content" id="panel-content"></div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript><div class="noscript">This interactive portfolio needs JavaScript enabled. Please turn it on to explore.</div></noscript>
+    <script src="app.js"></script>
+  </body>
+</html>
