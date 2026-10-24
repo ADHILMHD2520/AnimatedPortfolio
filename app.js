@@ -1,4 +1,4 @@
-/* Adhil's Developer World — asset-free interactive 2.5D portfolio */
+/* Adhil's Developer World - asset-free interactive 2.5D portfolio */
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
@@ -14,56 +14,61 @@ const locations = {
 const panelMarkup = {
   about: () => `
     <p class="panel-kicker">01 / ORIGIN STORY</p>
-    <h2 id="panel-title">Building useful things,<br />with a little wonder.</h2>
-    <p class="panel-lead">I'm <strong>Adhil Muhammad K.</strong>, a software developer and B.Tech Computer Science &amp; Engineering graduate from Kerala, India. I enjoy turning messy ideas into modern, reliable full-stack experiences.</p>
+    <h2 id="panel-title">Building reliable things,<br />end to end.</h2>
+    <p class="panel-lead">I'm <strong>Adhil Muhammad K.</strong>, a Computer Science Engineer and MERN full-stack developer from Kozhikode, Kerala. I build responsive web applications with thoughtful interfaces, dependable APIs, and well-structured data.</p>
     <div class="panel-grid">
-      <div class="info-card"><span>ROLE</span><b>Software Developer<br />MERN Stack Developer</b></div>
-      <div class="info-card"><span>BASE</span><b>Kerala, India<br />Open to collaboration</b></div>
-      <div class="info-card"><span>EDUCATION</span><b>B.Tech Computer Science<br />&amp; Engineering</b></div>
-      <div class="info-card"><span>APPROACH</span><b>Thoughtful UX + dependable<br />engineering</b></div>
+      <div class="info-card"><span>ROLE</span><b>MERN Full-Stack<br />Developer</b></div>
+      <div class="info-card"><span>BASE</span><b>Kozhikode, Kerala<br />India</b></div>
+      <div class="info-card"><span>EDUCATION</span><b>B.Tech Computer Science<br />&amp; Engineering, FISAT</b></div>
+      <div class="info-card"><span>APPROACH</span><b>Responsive UX + reliable<br />full-stack engineering</b></div>
     </div>
-    <div class="interest-list"><span class="tag">FULL-STACK WEB APPS</span><span class="tag">INTERACTIVE UI</span><span class="tag">REST APIs</span><span class="tag">PRODUCT THINKING</span></div>
-    <div class="callout">I’m most at home where product logic and polished interfaces meet — building clear flows, solid backends, and details that make an application feel alive.</div>`,
+    <div class="interest-list"><span class="tag">MERN STACK</span><span class="tag">REST APIs</span><span class="tag">DATA MIGRATION</span><span class="tag">TEST AUTOMATION</span></div>
+    <div class="callout">My experience spans React and Node.js applications, Django and PostgreSQL systems, data migration, payment workflows, and test automation - always with an eye on maintainable, useful software.</div>`,
   projects: () => `
     <p class="panel-kicker">02 / SHIPPED IDEAS</p>
     <h2 id="panel-title">Projects from<br />the lab.</h2>
-    <p class="panel-lead">A selection of full-stack systems built around real user journeys — shopping, ordering, and learning.</p>
+    <p class="panel-lead">Three full-stack projects built around practical workflows: shopping, food ordering, and focused task management.</p>
     <div class="project-grid">
-      ${projectCard('Fragranzia', 'Full-stack e-commerce with an elegant shopping flow and a practical admin command centre.', ['React', 'Node', 'Express', 'MongoDB', 'Razorpay'], 'fragranzia')}
-      ${projectCard('Food Delivery', 'A MERN food platform for browsing categories, managing carts, placing orders, and administration.', ['React', 'Express', 'MongoDB', 'Payments'], 'food')}
-      ${projectCard('LMS Platform', 'A learning environment with course delivery, lessons, progress tracking, and distinct instructor tools.', ['React', 'Node.js', 'MongoDB', 'REST API'], 'lms')}
+      ${projectCard('Fragranzia', 'MERN e-commerce application with authentication, product management, cart, wishlist, orders, checkout, Razorpay payments, and order status management.', ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay'], 'fragranzia')}
+      ${projectCard('Food Delivery Website', 'MERN food-delivery application with authentication, food listings, carts, orders, checkout, and RESTful product and order APIs.', ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST API'], 'food')}
+      ${projectCard('Todo Management System', 'MERN task manager with CRUD operations, status tracking, REST APIs, Axios integration, MongoDB persistence, and a responsive React interface.', ['React.js', 'Node.js', 'MongoDB', 'Axios', 'Tailwind CSS'], 'todo')}
     </div>
-    <div class="callout">Project links are ready for your real GitHub repositories and deployed demos. Add them once the public URLs are available.</div>`,
+    <div class="callout">Each project combines a clear user flow with the backend work needed to make it dependable - authentication, data management, APIs, and responsive presentation.</div>`,
   skills: () => `
     <p class="panel-kicker">03 / TOOLKIT</p>
     <h2 id="panel-title">A stack for<br />making it real.</h2>
-    <p class="panel-lead">I pair a pragmatic JavaScript stack with backend, data, testing, and deployment tools that help ideas travel from prototype to production.</p>
+    <p class="panel-lead">A practical toolkit for shipping modern web applications, maintaining data-heavy systems, and protecting quality through testing.</p>
     <div class="skills-layout">
       <div class="skills-cloud" aria-label="Animated technology cloud"><span class="skill-orb">REACT</span><span class="skill-orb">NODE</span><span class="skill-orb">MONGO</span><span class="skill-orb">PYTHON</span><span class="skill-orb">JS</span><span class="skill-orb">DOCKER</span><span class="skill-orb">DJANGO</span><span class="skill-orb">SQL</span></div>
-      <div class="skill-groups"><div class="skill-group"><b>FRONTEND</b><p>HTML5, CSS3, JavaScript, React.js</p></div><div class="skill-group"><b>BACKEND &amp; DATA</b><p>Node.js, Express.js, MongoDB, PostgreSQL, SQL, Django</p></div><div class="skill-group"><b>QUALITY &amp; DELIVERY</b><p>Git &amp; GitHub, Docker, AWS, REST APIs, Playwright, Selenium</p></div></div>
+      <div class="skill-groups">
+        <div class="skill-group"><b>FRONTEND</b><p>HTML5, CSS3, JavaScript, React.js, Bootstrap, Tailwind CSS, responsive web design</p></div>
+        <div class="skill-group"><b>BACKEND &amp; DATA</b><p>Node.js, Express.js, Django, REST APIs, MongoDB, PostgreSQL, MySQL, SQL</p></div>
+        <div class="skill-group"><b>TOOLS &amp; QUALITY</b><p>Git, GitHub, Docker, Postman, VS Code, Selenium, Robot Framework, functional and regression testing</p></div>
+      </div>
     </div>`,
   experience: () => `
     <p class="panel-kicker">04 / IN THE FIELD</p>
     <h2 id="panel-title">Making systems<br />keep moving.</h2>
-    <p class="panel-lead">Software development is also the work around the feature: understanding existing systems, protecting data, testing edge cases, and making each release easier to trust.</p>
+    <p class="panel-lead">From MERN applications and database-backed platforms to quality assurance and data migration, I work across the lifecycle that makes software useful in the real world.</p>
     <div class="timeline">
-      <div class="timeline-item"><span>SOFTWARE DEVELOPER</span><h3>Production &amp; Maintenance Division</h3><p>Contributing across the development lifecycle, balancing feature delivery with the care required to sustain live systems.</p><div class="work-list"><span class="tag">BACKEND DEVELOPMENT</span><span class="tag">DATA MIGRATION</span><span class="tag">DATABASE WORK</span></div></div>
-      <div class="timeline-item"><span>ENGINEERING PRACTICE</span><h3>From API to assurance</h3><p>Building and maintaining APIs, testing workflows, investigating issues, and collaborating on resilient improvements to production applications.</p><div class="work-list"><span class="tag">API DEVELOPMENT</span><span class="tag">TESTING</span><span class="tag">MAINTENANCE</span></div></div>
+      <div class="timeline-item"><span>MAY 2025 - PRESENT / CALICUT</span><h3>MERN Full-Stack Intern - Softroniics</h3><p>Developing responsive MERN applications and reusable React components; connecting MongoDB through Mongoose, integrating Axios and REST APIs, performing CRUD operations, and implementing JWT authentication.</p><div class="work-list"><span class="tag">REACT.JS</span><span class="tag">MONGOOSE</span><span class="tag">JWT AUTH</span></div></div>
+      <div class="timeline-item"><span>JUN 2025 - FEB 2026 / TRIVANDRUM</span><h3>Software Developer - IHRD</h3><p>Contributed to the Kerala Legislative Assembly Webcasting Data Migration Project. Developed and maintained Python, Django, React.js, and PostgreSQL features; handled migration, validation, QA, Docker environments, and FFmpeg video workflows.</p><div class="work-list"><span class="tag">DJANGO</span><span class="tag">DATA MIGRATION</span><span class="tag">POSTGRESQL</span><span class="tag">DOCKER</span></div></div>
+      <div class="timeline-item"><span>NOV 2023 - MAR 2025 / CALICUT</span><h3>Automation Tester - Nucore Software Solutions</h3><p>Developed and maintained functional and regression test automation with Selenium and Robot Framework; analysed test results, documented issues, and worked with developers to improve software quality.</p><div class="work-list"><span class="tag">SELENIUM</span><span class="tag">ROBOT FRAMEWORK</span><span class="tag">REGRESSION TESTING</span></div></div>
     </div>`,
   resume: () => `
     <p class="panel-kicker">05 / CREDENTIALS</p>
     <h2 id="panel-title">The concise<br />version.</h2>
-    <div class="resume-layout"><div class="resume-preview" aria-label="Resume preview"><span class="resume-logo">AM / SOFTWARE DEVELOPER</span><h3>Adhil Muhammad K.</h3><p>MERN Stack Developer</p><div class="resume-lines"><i></i><i></i><i></i><i></i></div></div><div class="resume-info"><h3>Resume terminal</h3><p>View a print-friendly overview or download the text resume included with this portfolio. Replace it with your latest PDF before publishing.</p><button class="action-button" type="button" data-resume-view>↗ VIEW RESUME</button><a class="action-button alt" href="resume-adhil-muhammad.txt" download>↓ DOWNLOAD RESUME</a></div></div>`,
+    <div class="resume-layout"><div class="resume-preview" aria-label="Resume preview"><span class="resume-logo">AM / MERN FULL-STACK DEVELOPER</span><h3>Adhil Muhammad K.</h3><p>Kozhikode, Kerala</p><div class="resume-lines"><i></i><i></i><i></i><i></i></div></div><div class="resume-info"><h3>Resume terminal</h3><p>Explore the current resume for experience across MERN development, Django and data migration work, and software test automation.</p><a class="action-button" href="Adhil Muhammad K - Updated Resume.pdf" target="_blank" rel="noreferrer">&rarr; VIEW RESUME</a><a class="action-button alt" href="Adhil Muhammad K - Updated Resume.pdf" download>&darr; DOWNLOAD PDF</a></div></div>`,
   contact: () => `
     <p class="panel-kicker">06 / OPEN CHANNEL</p>
     <h2 id="panel-title">Let's build<br />something useful.</h2>
-    <p class="panel-lead">Have a product idea, an interesting role, or an interface that needs more energy? Send a note and let's start the conversation.</p>
-    <div class="contact-layout"><div class="contact-links"><a class="contact-link" href="mailto:hello@adhilmuhammad.dev"><span>EMAIL</span> hello@adhilmuhammad.dev ↗</a><a class="contact-link" href="https://github.com/" target="_blank" rel="noreferrer"><span>GITHUB</span> Add profile URL ↗</a><a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>LINKEDIN</span> Add profile URL ↗</a><div class="callout">Before publishing, swap in Adhil's preferred email and social profile URLs in <code>app.js</code>.</div></div>
-    <form class="contact-form" id="contact-form" novalidate><div class="form-field"><label for="contact-name">YOUR NAME</label><input id="contact-name" name="name" autocomplete="name" required /></div><div class="form-field"><label for="contact-email">EMAIL ADDRESS</label><input id="contact-email" name="email" type="email" autocomplete="email" required /></div><div class="form-field"><label for="contact-message">MESSAGE</label><textarea id="contact-message" name="message" required></textarea></div><div class="form-error" id="form-error" aria-live="polite"></div><button class="send-button" type="submit">SEND MESSAGE ↗</button></form></div>`,
+    <p class="panel-lead">Have a product idea, an interesting role, or a web application that needs careful execution? Send a note and let's start the conversation.</p>
+    <div class="contact-layout"><div class="contact-links"><a class="contact-link" href="mailto:adhilmuhammadfeb2520@gmail.com"><span>EMAIL</span> adhilmuhammadfeb2520@gmail.com &rarr;</a><a class="contact-link" href="tel:8330035897"><span>PHONE</span> 8330035897 &rarr;</a><a class="contact-link" href="https://github.com/ADHILMHD2520" target="_blank" rel="noreferrer"><span>GITHUB</span> github.com/ADHILMHD2520 &rarr;</a><a class="contact-link" href="https://www.linkedin.com/in/adhil-muhammad-k" target="_blank" rel="noreferrer"><span>LINKEDIN</span> linkedin.com/in/adhil-muhammad-k &rarr;</a></div>
+    <form class="contact-form" id="contact-form" novalidate><div class="form-field"><label for="contact-name">YOUR NAME</label><input id="contact-name" name="name" autocomplete="name" required /></div><div class="form-field"><label for="contact-email">EMAIL ADDRESS</label><input id="contact-email" name="email" type="email" autocomplete="email" required /></div><div class="form-field"><label for="contact-message">MESSAGE</label><textarea id="contact-message" name="message" required></textarea></div><div class="form-error" id="form-error" aria-live="polite"></div><button class="send-button" type="submit">SEND MESSAGE &rarr;</button></form></div>`,
 };
 
 function projectCard(name, description, technologies, visual) {
-  return `<article class="project-card"><div class="project-visual visual-${visual}" aria-hidden="true"><span></span><span></span><span></span><span></span></div><h3>${name}</h3><p>${description}</p><div class="tech-list">${technologies.map(tech => `<span>${tech}</span>`).join('')}</div><div class="card-actions"><button type="button" data-project="${name}" data-kind="GitHub">GITHUB ↗</button><button type="button" data-project="${name}" data-kind="Live demo">LIVE DEMO ↗</button></div></article>`;
+  return `<article class="project-card"><div class="project-visual visual-${visual}" aria-hidden="true"><span></span><span></span><span></span><span></span></div><h3>${name}</h3><p>${description}</p><div class="tech-list">${technologies.map(tech => `<span>${tech}</span>`).join('')}</div></article>`;
 }
 
 const loader = $('#loader');
@@ -107,7 +112,6 @@ function updateProximity() {
     const distance = Math.hypot(dx, dy);
     if (distance < bestDistance) { bestDistance = distance; closest = key; }
   }
-  // Keep the starting hub neutral; a station wakes up only once the explorer is close.
   nearby = bestDistance < 11 ? closest : null;
   $$('.landmark').forEach(item => item.classList.toggle('is-near', item.dataset.section === nearby));
   if (nearby) {
@@ -149,10 +153,6 @@ function openPanel(section) {
   document.body.style.overflow = 'hidden';
   setTimeout(() => panel.focus(), 60);
   if (section === 'contact') bindContactForm();
-  $$('.card-actions button', panel).forEach(button => button.addEventListener('click', () => {
-    showToast(`${button.dataset.kind} for ${button.dataset.project}: add the public URL in app.js before publishing.`);
-  }));
-  $('[data-resume-view]', panel)?.addEventListener('click', () => window.print());
 }
 
 function closePanel() {
@@ -203,7 +203,7 @@ function bindContactForm() {
     if (!/^\S+@\S+\.\S+$/.test(email)) { error.textContent = 'Please enter a valid email address.'; return; }
     error.textContent = '';
     form.reset();
-    showToast(`Thanks, ${name}. Your message is ready to send — connect this form to your form service before launch.`);
+    showToast(`Thanks, ${name}. Your message is ready to send - connect this form to your form service before launch.`);
   });
 }
 
@@ -216,7 +216,7 @@ window.addEventListener('keydown', event => {
   if (move && !activePanel) { pressed.add(move); event.preventDefault(); introCard.classList.add('is-dismissed'); }
   if (event.key === 'Enter' && nearby && !activePanel) { openPanel(nearby); }
   if (event.key === 'Escape' && activePanel) { closePanel(); activePanel = null; }
-  if (event.key.toLowerCase() === 'h' && event.altKey) showToast('✦ Hidden room found: console.log("Keep making things.")');
+  if (event.key.toLowerCase() === 'h' && event.altKey) showToast('Hidden room found: Keep making things.');
 });
 window.addEventListener('keyup', event => { const move = keyToMove(event.key); if (move) pressed.delete(move); });
 
@@ -256,7 +256,7 @@ function bootLoader() {
   setTimeout(tick, 250);
 }
 
-console.info('%cHey developer 👋%c\nYou found the console. Thanks for checking out Adhil\'s world.', 'color:#00e5ff;font-size:16px;font-weight:bold', 'color:#cfe5ff;font-size:12px');
+console.info('%cHey developer!%c\nYou found the console. Thanks for checking out Adhil\'s world.', 'color:#00e5ff;font-size:16px;font-weight:bold', 'color:#cfe5ff;font-size:12px');
 setPlayer();
 gameLoop();
 bootLoader();

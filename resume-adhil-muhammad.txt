@@ -1,31 +1,58 @@
 ADHIL MUHAMMAD K.
-Software Developer / MERN Stack Developer
-Kerala, India
+MERN Full-Stack Developer
+Kozhikode, Kerala, India
+
+CONTACT
+adhilmuhammadfeb2520@gmail.com
+8330035897
+linkedin.com/in/adhil-muhammad-k
+github.com/ADHILMHD2520
 
 PROFILE
-Computer Science and Engineering graduate focused on modern web applications,
-interactive interfaces, and dependable full-stack development.
-
-SKILLS
-HTML5, CSS3, JavaScript, React.js, Node.js, Express.js, MongoDB, Python,
-Django, PostgreSQL, SQL, Git & GitHub, Docker, REST APIs, AWS, Playwright,
-Selenium.
-
-PROJECTS
-Fragranzia — MERN e-commerce application with authentication, product
-management, cart, wishlist, orders, Razorpay payments, and an admin dashboard.
-
-Food Delivery Application — MERN food delivery platform with authentication,
-food categories, cart, orders, payments, and admin management.
-
-LMS Platform — Full-stack learning management system with student
-authentication, instructor tools, courses, lessons, video learning, progress
-tracking, and admin dashboard.
+Computer Science Engineer and Software Developer with hands-on experience
+building full-stack web applications using MongoDB, Express.js, React.js, and
+Node.js. Experienced in REST APIs, authentication, database integration,
+payment workflows, responsive interfaces, Python, Django, PostgreSQL, SQL,
+Docker, and data migration projects.
 
 EXPERIENCE
-Software Developer, Production & Maintenance Division
-Development work, data migration, backend and database development, testing,
-API development, and maintenance.
+MERN Full-Stack Intern, Softroniics | May 2025 - Present | Calicut
+- Developed responsive MERN web applications and reusable React components.
+- Connected MongoDB with Mongoose, performed CRUD operations, and integrated
+  frontends with REST APIs using Axios and JWT authentication.
+
+Software Developer, Institute of Human Resources Development (IHRD)
+June 2025 - February 2026 | Trivandrum
+- Supported the Kerala Legislative Assembly Webcasting Data Migration Project.
+- Built and maintained features with Python, Django, React.js, and PostgreSQL.
+- Performed migration, validation, QA, and video migration workflows with
+  PostgreSQL, MySQL, Docker, and FFmpeg.
+
+Automation Tester, Nucore Software Solutions | November 2023 - March 2025 | Calicut
+- Developed functional and regression test automation with Selenium and Robot Framework.
+- Analysed results, documented issues, and worked with developers to improve quality.
+
+PROJECTS
+Fragranzia - MERN e-commerce application with authentication, product
+management, cart, wishlist, orders, checkout, Razorpay payments, and order
+status management.
+
+Food Delivery Website - MERN application with authentication, food listings,
+cart, orders, checkout, and RESTful product and order APIs.
+
+Todo Management System - MERN application with CRUD, REST APIs, Axios,
+task-status management, a responsive React and Tailwind CSS interface, and
+MongoDB persistence.
+
+SKILLS
+JavaScript, Python, SQL, HTML5, CSS3, React.js, Bootstrap, Tailwind CSS,
+Node.js, Express.js, Django, REST APIs, MongoDB, PostgreSQL, MySQL, Git,
+GitHub, Docker, Postman, VS Code, Selenium, Robot Framework, functional and
+regression testing.
 
 EDUCATION
-B.Tech, Computer Science and Engineering
+B.Tech in Computer Science and Engineering, Federal Institute of Science and
+Technology (FISAT), Angamaly | June 2019 - June 2023
+
+CERTIFICATE
+Full Stack Web Development, Softroniics
